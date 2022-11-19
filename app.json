@@ -1,0 +1,81 @@
+{
+    "name": "EvaMariaBot",
+    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "auto-filter",
+      "filter",
+      "best",
+      "indian",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline"
+    ],
+    "website": "https://github.com/PachGit/charlie-chaplin",
+    "repository": "https://github.com/PachGit/charlie-chaplin",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "5050772080:AAHeP6_OxK5G4Y3_6O0CLPv-aHYeaDsblEU",
+            "required": true
+        },
+        "API_ID": {
+            "description": "7349458",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "9c88f3ac51528cb11a96adb6f017fe77",
+            "required": true
+        },
+        "CHANNELS": {
+            "description": "-1001492105169",
+            "required": false
+        },
+        "ADMINS": {
+            "description": "503170505 668730275 1760723084 2115662746",
+            "required": true
+        },
+        "PICS": {
+            "description": "https://telegra.ph/file/f77a436a94100b077317c.jpg",
+            "required": false
+        },
+        "LOG_CHANNEL": {
+            "description": "-1001508667215",
+            "required": true
+        },
+        "AUTH_USERS": {
+            "description": "503170505 ",
+            "required": false
+        },
+        "AUTH_CHANNEL": {
+            "description": "-1001777044851",
+            "required": false
+        },
+        "DATABASE_URI": {
+            "description": "mongodb+srv://t4filterbot1:t4filterbot1@cluster0.8ksja.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+            "required": true
+        },
+        "DATABASE_NAME": {
+            "description": "cluster0",
+            "required": false
+        },
+        "COLLECTION_NAME": {
+            "description": "cluster0",
+            "value": "Telegram_files",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
